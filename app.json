@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Prayer Times",
+    "slug": "prayer-times-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to calculate accurate prayer times."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+} 
